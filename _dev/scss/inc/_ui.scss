@@ -1,0 +1,33 @@
+/**
+ * Created by Pompo on 24.09.2016.
+ */
+.btn{
+  text-transform: uppercase;
+  min-width: 150px;
+  padding: .85em 1.25em;
+  font-size: .875rem;
+  text-align: center;
+  line-height: 1;
+  text-decoration: none;
+  display: block;
+
+  @extend %transition;
+
+  &:hover,
+  &:focus,
+  &:active{
+    text-decoration: none;
+  }
+
+  &-action{
+    background: $action;
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active{
+      background: $action-hover;
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+/**
+ * Created by Pompo on 24.09.2016.
+ */
+
+.header{
+  background: $main-bg;
+  height: 60px;
+  color: $white;
+  padding: .7em 0;
+  box-sizing: border-box;
+  animation: slide-top .45s linear 1;
+
+  &__location,
+  &__phone{
+    position: relative;
+    padding-left: 40px;
+  }
+
+  &__icon{
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+
+  &__txt{
+    font-size: 1rem;
+
+    @extend %Century;
+  }
+
+  &__btn{
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  &__phone{
+    & > .header__txt{
+      font-size: 1.5rem;
+
+      & span{
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__social-icon{
+    float: right;
+
+    & a{
+      margin-left: 1rem;
+      transform: scale(.9);
+      transition: transform ease-in 300ms;
+
+      &:first-of-type{
+        margin-left: 0;
+      }
+
+      &:hover{
+        text-decoration: none;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+@keyframes slide-top {
+  from{
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to{
+    opacity: 1;
+    transform: none
+  }
+}
+

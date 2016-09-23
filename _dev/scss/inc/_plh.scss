@@ -1,0 +1,31 @@
+/**
+ * Created by Pompo on 10.09.2016.
+ */
+%Tahoma{
+  font-family: 'Tahoma', Arial, sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+%Century{
+  font-family: 'Century', Arial, sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+
+%box-shadow{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+%transition{
+  transition: all ease 300ms;
+}
+
+%clr{
+  &:after{
+    content:"";
+    clear: both;
+    display: block;
+  }
+}

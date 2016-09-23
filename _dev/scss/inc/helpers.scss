@@ -1,0 +1,8 @@
+/**
+ * Created by Pompo on 24.09.2016.
+ */
+.hide-mobile{
+  @include respondTo(mobile){
+    display: none;
+  }
+}
