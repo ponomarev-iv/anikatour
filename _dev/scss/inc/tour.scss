@@ -1,0 +1,64 @@
+/**
+ * Created by Pompo on 30.09.2016.
+ */
+.tour{
+  background: url('../img/bg-tour.jpg') 50% 50% / cover;
+
+  @include respondTo(small){
+    background: $main-bg;
+  }
+
+  &-wrap{
+    background: rgba(0, 0, 0, 0) linear-gradient(to top, rgba(74, 92, 107, 0.3), rgba(74, 92, 107, 0.9)) repeat scroll 0 0;
+    height: 100%;
+    padding-top: 3em;
+
+    @include respondTo(small){
+      background: none;
+    }
+  }
+
+  &__ico{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 auto;
+  }
+
+  &__title{
+    color: #fff;
+    font-family: $Century;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+
+    @include respondTo(small){
+      font-size: $small-size;
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+    min-height: 190px;
+
+    &:hover{
+      text-decoration: none;
+
+      & .tour__title{
+        color: $l-accent;
+      }
+
+      & .ico-tour{
+        fill: $l-accent;
+        stroke: $l-accent;
+      }
+
+      & .tour__ico{
+        border-color: $l-accent;
+      }
+    }
+  }
+}

@@ -2,56 +2,68 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="libs/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/all.css" type="text/css">
-    <title>Title</title>
+    <title>Туристическое агенство Аника Тур</title>
+
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3 col-xs-6">
-                <div class="header__location">
-                    <div class="header__icon">
-                        <span class="icon i-location"></span>
-                    </div>
-                   <div class="header__txt">
-                       ул. Ленина, 60<br>
-                       оф. 777
-                   </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xs-6">
-                <div class="header__phone">
-                    <div class="header__icon">
-                        <span class="icon i-phone"></span>
-                    </div>
-                    <div class="header__txt">
-                        <span>+7(342)</span>&nbsp;227&nbsp;7&nbsp;700700
-                        <div class="header__btn hide-mobile">
-                            <a href="#" class="btn btn-action">Позвонить нам</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-xs-6 hide-mobile">
-                <div class="header__social-icon">
-                    <a href="#" class="icon i-instagram"></a>
-                    <a href="#" class="icon i-facebook"></a>
-                    <a href="#" class="icon i-vk"></a>
-                </div>
 
-            </div>
-        </div>
-    </div>
-</header>
+//= inc/toolbar.html
+
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h1>Привет Мир!</h1>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Аника Тур" width="234" height="66">
+            </div>
+        </div>
+        <div class="col-md-8 hide-tablet">
+            <nav class="top-nav">
+                <a href="#" class="top-nav__link top-nav__link_active">Главная</a>
+                <a href="about.html" class="top-nav__link">О&nbsp;компании</a>
+                <a href="#" class="top-nav__link">Отдых зарубежом</a>
+                <a href="#" class="top-nav__link">Отдых в&nbsp;России</a>
+                <a href="#" class="top-nav__link">Отзывы</a>
+                <a href="#" class="top-nav__link">Акции</a>
+                <a href="#" class="top-nav__link">Контакты</a>
+            </nav>
         </div>
     </div>
 </div>
+
+//= inc/hero-banner.html
+//= inc/form-order.html
+
+
+<!--горящее предложение-->
+//= inc/special-offer.html
+
+<!--туры и направления-->
+//= inc/tour-section.html
+
+<section class="main-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Мы предлагаем</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="img/banner1.jpg" alt="Золотое кольцо России">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-primary">Смотреть другие акции</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+//= inc/footer.html
 
 </body>
 </html>

@@ -1,0 +1,21 @@
+/**
+ * Created by Pompo on 25.09.2016.
+ */
+
+.order-block{
+  background: $main-bg;
+  padding: 1em 0;
+
+  &__title{
+    color: $white;
+    font-size: $big-size;
+    margin: .2em 0;
+
+    @extend %Century;
+
+    @include respondTo(desktop){
+      padding-left: 14px;
+      margin-bottom: .4em;
+    }
+  }
+}

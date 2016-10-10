@@ -1,0 +1,31 @@
+/**
+ * Created by Pompo on 25.09.2016.
+ */
+.form{
+
+  &-unit{
+    padding-left: 1em;
+    float: left;
+    box-sizing: border-box;
+
+    @include respondTo(tablet){
+      padding-left: 0;
+    }
+
+    &_single-left{
+      padding-left: 0;
+    }
+  }
+}
+
+.inp-regular{
+  width: 100%;
+  padding: .6em 1em;
+  border: none;
+  font-size: $small-size;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .66) inset;
+
+  @include respondTo(tablet){
+    font-size: $normal-size;
+  }
+}

@@ -1,0 +1,26 @@
+$xs-size: 12px;
+$small-size: 14px;
+$normal-size: 16px;
+$middle-size: 18px;
+$big-size: 22px;
+
+//reset header
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+.section-title{
+  font-size: $big-size;
+  color: $black;
+  margin-bottom: .85em;
+  text-transform: uppercase;
+
+  @extend %Century;
+}
+
+p{
+  line-height: 1.5;
+  font-family: $Tahoma;
+  font-size: $normal-size;
+  color: $black;
+}

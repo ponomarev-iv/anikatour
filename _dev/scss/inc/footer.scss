@@ -1,0 +1,60 @@
+/**
+ * Created by Pompo on 25.09.2016.
+ */
+
+.main-footer{
+  background: $main-bg;
+  color: $white;
+
+  &_wrap{
+    background: url("../img/footer-airplane.png") no-repeat scroll 50% 50%;
+    padding: 2em 0;
+  }
+
+  &__col{
+    @include respondTo(tablet){
+      margin-top: 2em;
+    }
+  }
+
+  &__title{
+    text-transform: uppercase;
+    font-size: $middle-size;
+    color: $accent;
+
+    @extend %Century;
+
+    &_pad-l{
+      padding: 5px 0 0 40px;
+    }
+
+    & span{
+      text-transform: none;
+    }
+  }
+
+  &__item{
+    padding-left: 40px;
+    margin: 1em 0 0;
+    position: relative;
+  }
+
+  &__icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__txt{
+    margin: 0;
+    min-height: 2rem;
+    font-size: $small-size;
+    line-height: 2;
+    font-family: $Century;
+    color: #fff;
+
+    @include respondTo(mobile){
+      line-height: 1.6;
+    }
+  }
+}

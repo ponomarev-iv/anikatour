@@ -1,0 +1,35 @@
+/**
+ * Created by Pompo on 25.09.2016.
+ */
+
+.top-nav{
+  display: table;
+  list-style: none;
+  height: 98px;
+  margin: 0;
+  padding: 0;
+
+  &__link{
+    text-transform: uppercase;
+    font-family: $Century;
+    color: $black;
+    font-size: $small-size;
+    padding:  0 1em;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+    @extend %transition;
+
+    @include respondTo(desktop){
+      font-size: $xs-size;
+    }
+
+    &:hover,
+    &_active{
+      color: $white;
+      background: $accent;
+      text-decoration: none;
+    }
+  }
+}

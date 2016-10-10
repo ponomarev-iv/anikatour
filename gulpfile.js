@@ -13,7 +13,11 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('gulp-rimraf'),
     browserSync = require("browser-sync"),
-    size = require('gulp-size'),
+    $ = {
+        gutil: require('gulp-util'),
+        svgSprite: require('gulp-svg-sprite'),
+        size: require('gulp-size'),
+    },
     reload = browserSync.reload;
 
 var path = {
@@ -55,6 +59,36 @@ var config = {
 
 gulp.task('webserver', function () {
     browserSync(config);
+});
+
+
+gulp.task('svgSprite', function () {
+    return gulp.src('_dev/img/icons/*')
+        .pipe($.svgSprite({
+            shape: {
+                spacing: {
+                    padding: 5
+                }
+            },
+            mode: {
+                css: {
+                    dest: "./",
+                    layout: "diagonal",
+                    sprite: "public/img/sprite",
+                    bust: false,
+                    render: {
+                        scss: {
+                            dest: "_dev/scss/inc/_sprite.scss",
+                            template: "_dev/scss/tmpl/sprite-template.scss"
+                        }
+                    }
+                }
+            },
+            variables: {
+                mapname: "icons"
+            }
+        }))
+        .pipe(gulp.dest("./"));
 });
 
 
@@ -106,7 +140,6 @@ gulp.task('style:build', function () {
         .on('error', console.log)
         .pipe(prefixer('last 4 versions'))
         .pipe(cssmin())
-        .pipe(size())
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
@@ -115,7 +148,6 @@ gulp.task('image:build', function () {
     gulp.src(path.src.img)
         .pipe(imagemin())
         .on('error', console.log)
-        .pipe(size())
         .pipe(gulp.dest(path.build.img));
 });
 

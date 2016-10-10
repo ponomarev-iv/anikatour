@@ -4,14 +4,24 @@
 .btn{
   text-transform: uppercase;
   min-width: 150px;
-  padding: .85em 1.25em;
+  padding: .85em 1em;
   font-size: .875rem;
   text-align: center;
   line-height: 1;
   text-decoration: none;
   display: block;
+  border: none;
 
   @extend %transition;
+  @extend %Century;
+
+  @include respondTo(mobile){
+    font-size: 1rem;
+  }
+
+  &_w-100{
+    width: 100%;
+  }
 
   &:hover,
   &:focus,
@@ -30,4 +40,22 @@
       color: $white;
     }
   }
+
+  &-primary{
+    background: $accent;
+    color: $black;
+    font-size: $middle-size;
+    //временно
+    margin-top: 20px;
+
+    &:hover{
+      background: $l-accent;
+    }
+  }
+}
+
+//icons
+.ico-tour{
+  fill: #fff;
+  stroke: #fff;
 }
