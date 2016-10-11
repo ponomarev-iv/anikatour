@@ -1,0 +1,53 @@
+/**
+ * Created by Pompo on 11.10.2016.
+ */
+.card{
+  display: block;
+  border: 1px solid #eeeeee;
+  margin: 30px 0;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);
+
+  @extend %transition;
+
+  @include respondTo(small){
+    margin: 20px 0;
+  }
+
+
+  &:hover{
+    @extend %box-shadow;
+    text-decoration: none;
+    border-color: $l-accent;
+  }
+
+
+  &__header{
+    background: $main-bg;
+    color: #fff;
+    padding: 15px 20px;
+    overflow: hidden;
+
+    & h2{
+      font-family: $Century;
+      font-size: $big-size;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      line-height: 1;
+
+      @include respondTo(tablet){
+        font-size: $middle-size;
+      }
+    }
+  }
+
+  &__body{
+
+    & img{
+      max-width: 100%;
+      min-width: 100%;
+      height: auto;
+    }
+  }
+}
