@@ -5,19 +5,19 @@
 .top-nav{
   display: table;
   list-style: none;
-  height: 98px;
+  height: 55px;
   margin: 0;
   padding: 0;
 
   &__link{
-    text-transform: uppercase;
-    font-family: $Century;
-    color: $black;
-    font-size: $small-size;
-    padding:  0 1em;
+    font-family: $Roboto;
+    color: #fff;
+    font-size: $normal-size;
+    padding:  0 1.2em;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    border-left: 1px solid #405a6c;
 
     @extend %transition;
 
@@ -25,11 +25,18 @@
       font-size: $xs-size;
     }
 
-    &:hover,
-    &_active{
+    @include respondTo(tablet){
+      padding:  0 1.6em;
+    }
+
+    &:hover{
       color: $white;
       background: $accent;
       text-decoration: none;
+    }
+
+    &:last-child{
+      border-right: 1px solid #405a6c;
     }
   }
 }

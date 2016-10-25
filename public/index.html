@@ -2,46 +2,77 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="libs/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/swiper.min.css" type="text/css">
     <link rel="stylesheet" href="css/all.css" type="text/css">
     <title>Туристическое агенство Аника Тур</title>
-
 </head>
 <body>
 
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-12">
-                <div class="header__location">
-                    <div class="header__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
-                            <use xlink:href="img/sprite.svg#icon-location"></use>
-                        </svg>
-                    </div>
-                    <div class="header__txt">
-                        ул. Ленина, 10<br>
-                        2 этаж, оф. 4
-                    </div>
+            <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/logo.svg" alt="Аника Тур" width="234" height="66">
+                    </a>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-8 col-xs-12">
-                <div class="header__phone">
-                    <div class="header__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
-                            <use xlink:href="img/sprite.svg#phone"></use>
-                        </svg>
+            <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12">
+                <div class="header__wrap">
+                    <div class="header__item">
+                        <div class="header__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                                <use xlink:href="img/sprite.svg#icon-location"></use>
+                            </svg>
+                        </div>
+                        <div class="header__txt">
+                            <span>ул.&nbsp;Ленина,&nbsp;10</span><br>
+                            <span>2 этаж, оф. 4</span>
+                        </div>
                     </div>
-                    <div class="header__txt">
-                        <span>+7(342)</span>&nbsp;247&nbsp;66&nbsp;22
+                    <div class="header__item">
+                        <div class="header__icon header__icon_phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                                <use xlink:href="img/sprite.svg#phone"></use>
+                            </svg>
+                        </div>
+                        <div class="header__txt">
+                            <a href="tel:+7(342)2476622">+7(342)&nbsp;247-66-22</a><br>
+                            <a href="tel:2982004">298-20-04</a>
+                        </div>
+                    </div>
+                    <div class="header__item hide-tablet">
                         <div class="header__btn hide-mobile">
                             <a href="#" class="btn btn-action">Позвонить нам</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 hide-tablet">
+        </div>
+    </div>
+</header>
+
+<section class="header__menu header__menu_fixed">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-10 col-sm-12 hide-mobile">
+                <nav class="top-nav">
+                    <a href="/" class="top-nav__link">Главная</a>
+                    <a href="about.html" class="top-nav__link">О&nbsp;компании</a>
+                    <a href="#" class="top-nav__link">Отдых зарубежом</a>
+                    <a href="russia-tour.html" class="top-nav__link">Отдых в&nbsp;России</a>
+                    <a href="#" class="top-nav__link">Отзывы</a>
+                    <a href="#" class="top-nav__link">Акции</a>
+                    <a href="contact.html" class="top-nav__link">Контакты</a>
+
+                </nav>
+            </div>
+            <div class="col-md-2 col-sm-12 col-xs-12 hide-tablet">
                 <div class="header__social-icon">
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
@@ -59,47 +90,51 @@
                         </svg>
                     </a>
                 </div>
-
             </div>
         </div>
     </div>
-</header>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="logo">
-                <img src="img/logo.svg" alt="Аника Тур" width="234" height="66">
+</section>
+<div class="rel-block hide-mobile">
+    <!-- Slider main container -->
+    <div id='swiper-hero-banner' class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="hero-banner hero-banner_6"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="hero-banner hero-banner_1"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="hero-banner hero-banner_2"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="hero-banner hero-banner_3"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="hero-banner hero-banner_4"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="hero-banner hero-banner_5"></div>
             </div>
         </div>
-        <div class="col-md-8 hide-tablet">
-            <nav class="top-nav">
-                <a href="#" class="top-nav__link top-nav__link_active">Главная</a>
-                <a href="about.html" class="top-nav__link">О&nbsp;компании</a>
-                <a href="#" class="top-nav__link">Отдых зарубежом</a>
-                <a href="russia-tour.html" class="top-nav__link">Отдых в&nbsp;России</a>
-                <a href="#" class="top-nav__link">Отзывы</a>
-                <a href="#" class="top-nav__link">Акции</a>
-                <a href="#" class="top-nav__link">Контакты</a>
-            </nav>
-        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
     </div>
-</div>
 
-<div class="hero-banner">
-    <div class="hero-banner_wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col md-12">
-                    <h1 class="hero-banner__txt">Путешествовать &ndash;&nbsp;значит жить</h1>
-                    <div class="hero-banner__bg-img"></div>
-                </div>
-            </div>
-        </div>
+
+    <div class="hero-banner__text-wrap">
+
+        <h1 class="hero-banner__title">&laquo;АНИКА-ТУР&raquo;&nbsp;&ndash; туристическое агентство</h1>
+        <p class="hero-banner__txt">
+            * Все направления туризма.
+        </p>
     </div>
 </div>
 <div class="order-block">
-    <div class="container">
+    <div class="container rel-block">
         <div class="row">
             <div class="col-lg-2 col-md-12 col-xs-12">
                 <h2 class="order-block__title">Хочу на отдых:</h2>
@@ -127,229 +162,278 @@
     </div>
 </div>
 
-
-<!--горящее предложение-->
-<section class="main-section special-offer">
+<section class="main-section main-section_bot">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">Горящее предложение</h3>
+                <div class="blockquite">
+                    <p>Мы&nbsp;индивидуально подходим к&nbsp;каждому туристу, стараясь удовлетворить любой его запрос. </p>
+                </div>
+                    <p>
+                        Наши туристы&nbsp;&mdash; это люди разных возрастов и&nbsp;различных профессий.
+                    </p>
+                <p>
+                     У нас работают профессионалы своего дела, готовые подобрать тур в&nbsp;любую точку Мира.
+                </p>
+                <p>
+                    Это могут быть и&nbsp;пляжный отдых, как в&nbsp;России, так и&nbsp;заграницей, экскурсионные туры по&nbsp;России и&nbsp;Европе, круизы, активные туры,отдых и&nbsp;лечения в&nbsp;санаториях, экскурсионный туры для детей и&nbsp;школьников, корпоративные мероприятия для организаций и&nbsp;просто дружных компаний, отдых на&nbsp;базах отдыха, экскурсии по&nbsp;Перми и&nbsp;Краю, и&nbsp;много других интересных направлений.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
 <!--туры и направления-->
-<section class="tour">
-    <div class="tour-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#search-tour"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Поиск тура
-                        </div>
-                    </a>
-                </div>
+<section class="tour ">
+    <!--<img src="img/bg-tour.png" alt="туристическое агенство" class="js-parallax">-->
+    <div class="js-parallax" data-parallax="scroll" data-image-src="img/bg-tour.png">
+        <div class="tour-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="search-tour.html" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#search-tour"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Поиск тура
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#zagran-tour"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Туры за границу
-                        </div>
-                    </a>
-                </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#zagran-tour"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Туры за границу
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="bus-tour.html" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#bus-tour"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Автобусные туры по Европе
-                        </div>
-                    </a>
-                </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="/bus-tour.html" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#bus-tour"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Автобусные туры по Европе
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#ship-tour"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Круизы
-                        </div>
-                    </a>
-                </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="cruises-perm.html" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#ship-tour"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Круизы
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="russia-tour.html" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#russian-tour"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Экскурсионные туры по России
-                        </div>
-                    </a>
-                </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="russia-tour.html" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#russian-tour"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Экскурсионные туры по России
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="perm-tour.html" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#perm-tour"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Экскурсии по Перми и краю
-                        </div>
-                    </a>
-                </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="perm-tour.html" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#perm-tour"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Экскурсии в выходные и праздники
+                            </div>
+                        </a>
+                    </div>
 
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#rent-ship"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Аренда теплохода
-                        </div>
-                    </a>
                 </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="raint-ship.html" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#rent-ship"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Аренда теплохода
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#insurance"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Страхование
-                        </div>
-                    </a>
-                </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#insurance"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Страхование
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#active-tour"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Активные туры
-                        </div>
-                    </a>
-                </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#active-tour"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Активные туры
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#school-expeditions"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Экскурсии для групп и школьников
-                        </div>
-                    </a>
-                </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="school-tour.html" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#school-expeditions"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Экскурсии для групп и школьников
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#sanatorium"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Санатории Перми и края
-                        </div>
-                    </a>
-                </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="sanatorium-tour.html" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#sanatorium"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Санатории Перми и края
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#rest"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Базы отдыха Перми и края
-                        </div>
-                    </a>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="recreation.html" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#rest"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Базы отдыха Перми и края
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#train-tickets"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            ЖД билеты
-                        </div>
-                    </a>
-                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#train-tickets"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                ЖД билеты
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a href="#" class="tour__link">
-                        <div class="tour__ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
-                                <use xlink:href="img/sprite.svg#plain-tickets"></use>
-                            </svg>
-                        </div>
-                        <div class="tour__title">
-                            Авиабилеты
-                        </div>
-                    </a>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <a href="#" class="tour__link">
+                            <div class="tour__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-tour">
+                                    <use xlink:href="img/sprite.svg#plain-tickets"></use>
+                                </svg>
+                            </div>
+                            <div class="tour__title">
+                                Авиабилеты
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="main-section">
+<!--партнеры-->
+<section class="main-section main-section_top">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">Мы предлагаем</h3>
+                <h3 class="section-title">Наши партнеры</h3>
+                <hr class="accent-line">
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <img src="img/banner1.jpg" alt="Золотое кольцо России">
+
+                <div id="swiper-partner" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/partner-1.png" alt="Партнеры компании Аника-Тур">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/partner-2.png" alt="Партнеры компании Аника-Тур">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/partner-3.png" alt="Партнеры компании Аника-Тур">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/partner-4.png" alt="Партнеры компании Аника-Тур">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/partner-5.png" alt="Партнеры компании Аника-Тур">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/partner-6.png" alt="Партнеры компании Аника-Тур">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/partner-7.png" alt="Партнеры компании Аника-Тур">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/partner-8.png" alt="Партнеры компании Аника-Тур">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/partner-9.png" alt="Партнеры компании Аника-Тур">
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <button class="btn btn-primary">Смотреть другие акции</button>
-            </div>
-        </div>
+        <!--<div class="row">-->
+        <!--<div class="col-md-12">-->
+        <!--<button class="btn btn-primary">Смотреть другие акции</button>-->
+        <!--</div>-->
+        <!--</div>-->
     </div>
 </section>
 
@@ -357,7 +441,7 @@
     <div class="main-footer_wrap">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                     <h5 class="main-footer__title">Наши контакты</h5>
                     <div class="main-footer__item">
                         <div class="main-footer__icon">
@@ -382,7 +466,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-5 col-md-offset-1 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                     <div class="main-footer__col">
                         <h5 class="main-footer__title">Режим работы</h5>
                         <div class="main-footer__item">
@@ -403,6 +487,11 @@
         </div>
     </div>
 </footer>
+
+<script src="libs/jquery.js"></script>
+<script src="libs/swiper.jquery.min.js"></script>
+<script src="libs/parallax.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

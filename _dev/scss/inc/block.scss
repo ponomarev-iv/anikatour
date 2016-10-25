@@ -3,19 +3,57 @@
  */
 
 .order-block{
-  background: $main-bg;
-  padding: 1em 0;
+  //background: $main-bg;
+  background: $main-bg linear-gradient(to top, $main-bg 0%, #2c5064 35%, $main-bg 100% );
+  padding: 1.6em 0;
+
+  @include respondTo(mobile){
+    padding-top: 0;
+  }
 
   &__title{
     color: $white;
     font-size: $big-size;
     margin: .2em 0;
 
-    @extend %Century;
+    @extend %Roboto;
 
     @include respondTo(desktop){
       padding-left: 14px;
       margin-bottom: .4em;
     }
+  }
+}
+
+.blockquite{
+  padding: 30px;
+  background: #eeeeee;
+  position: relative;
+  border-radius: 8px;
+  margin-bottom: 20px;
+
+  @include respondTo(small){
+    padding: 20px;
+  }
+
+  & p{
+    margin: 0;
+    font-style: italic;
+    font-size: $big-size;
+    font-family: $Roboto;
+
+    @include respondTo(small){
+      font-size: $middle-size;
+    }
+  }
+
+  &:before{
+    position: absolute;
+    content: '';
+    left: -10px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: $main-bg;
   }
 }

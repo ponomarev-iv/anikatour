@@ -20,10 +20,11 @@
 
 .inp-regular{
   width: 100%;
-  padding: .6em 1em;
+  padding: .75em 1em;
   border: none;
   font-size: $small-size;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, .66) inset;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, .66) inset;
+  border-radius: 4px;
 
   @include respondTo(tablet){
     font-size: $normal-size;

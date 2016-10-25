@@ -11,9 +11,10 @@
   text-decoration: none;
   display: block;
   border: none;
+  border-radius: 4px;
 
   @extend %transition;
-  @extend %Century;
+  @extend %Roboto;
 
   @include respondTo(mobile){
     font-size: 1rem;

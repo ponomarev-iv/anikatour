@@ -2,16 +2,36 @@
  * Created by Pompo on 30.09.2016.
  */
 .tour{
-  background: url('../img/bg-tour.jpg') 50% 50% / cover;
+  //background: url('../img/bg-tour.png') 50% 50% / cover;
+  position: relative;
+  overflow: hidden;
 
   @include respondTo(small){
     background: $main-bg;
   }
 
   &-wrap{
-    background: rgba(0, 0, 0, 0) linear-gradient(to top, rgba(74, 92, 107, 0.3), rgba(74, 92, 107, 0.9)) repeat scroll 0 0;
     height: 100%;
-    padding-top: 3em;
+    padding: 6em 0 3em;
+    position: relative;
+
+    &:before,
+    &:after{
+      position: absolute;
+      content: '';
+      bottom: -14px;
+      left: 0;
+      width: 100%;
+      background: url('../img/wrap-wave.png') repeat-x 0 0;
+      height: 40px;
+      z-index: 10;
+    }
+
+    &:before{
+      transform: rotate(180deg);
+      top: -14px;
+      bottom: auto;
+    }
 
     @include respondTo(small){
       background: none;
@@ -28,7 +48,7 @@
 
   &__title{
     color: #fff;
-    font-family: $Century;
+    font-family: $Roboto;
     text-transform: uppercase;
     text-align: center;
     padding-top: 10px;

@@ -17,11 +17,15 @@ img{
 }
 
 .logo{
-  padding: 1em 0;
   display: block;
 }
 
 .main-section{
   padding: 3em 0;
   flex: 1;
+  background: #fff;
+
+  & p{
+    margin: 0 0 15px;
+  }
 }

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="libs/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/all.css" type="text/css">
     <title>Экскурсионные туры по Перми и Пермскому краю</title>
@@ -13,35 +13,65 @@
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-12">
-                <div class="header__location">
-                    <div class="header__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
-                            <use xlink:href="img/sprite.svg#icon-location"></use>
-                        </svg>
-                    </div>
-                    <div class="header__txt">
-                        ул. Ленина, 10<br>
-                        2 этаж, оф. 4
-                    </div>
+            <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/logo.svg" alt="Аника Тур" width="234" height="66">
+                    </a>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-8 col-xs-12">
-                <div class="header__phone">
-                    <div class="header__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
-                            <use xlink:href="img/sprite.svg#phone"></use>
-                        </svg>
+            <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12">
+                <div class="header__wrap">
+                    <div class="header__item">
+                        <div class="header__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                                <use xlink:href="img/sprite.svg#icon-location"></use>
+                            </svg>
+                        </div>
+                        <div class="header__txt">
+                            <span>ул.&nbsp;Ленина,&nbsp;10</span><br>
+                            <span>2 этаж, оф. 4</span>
+                        </div>
                     </div>
-                    <div class="header__txt">
-                        <span>+7(342)</span>&nbsp;247&nbsp;66&nbsp;22
+                    <div class="header__item">
+                        <div class="header__icon header__icon_phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                                <use xlink:href="img/sprite.svg#phone"></use>
+                            </svg>
+                        </div>
+                        <div class="header__txt">
+                            <a href="tel:+7(342)2476622">+7(342)&nbsp;247-66-22</a><br>
+                            <a href="tel:2982004">298-20-04</a>
+                        </div>
+                    </div>
+                    <div class="header__item hide-tablet">
                         <div class="header__btn hide-mobile">
                             <a href="#" class="btn btn-action">Позвонить нам</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 hide-tablet">
+        </div>
+    </div>
+</header>
+
+<section class="header__menu header__menu_fixed">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-10 col-sm-12 hide-mobile">
+                <nav class="top-nav">
+                    <a href="/" class="top-nav__link">Главная</a>
+                    <a href="about.html" class="top-nav__link">О&nbsp;компании</a>
+                    <a href="#" class="top-nav__link">Отдых зарубежом</a>
+                    <a href="russia-tour.html" class="top-nav__link">Отдых в&nbsp;России</a>
+                    <a href="#" class="top-nav__link">Отзывы</a>
+                    <a href="#" class="top-nav__link">Акции</a>
+                    <a href="contact.html" class="top-nav__link">Контакты</a>
+
+                </nav>
+            </div>
+            <div class="col-md-2 col-sm-12 col-xs-12 hide-tablet">
                 <div class="header__social-icon">
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
@@ -59,35 +89,12 @@
                         </svg>
                     </a>
                 </div>
-
             </div>
         </div>
     </div>
-</header>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="/" class="logo">
-                <img src="img/logo.svg" alt="Аника Тур" width="234" height="66">
-            </a>
-        </div>
-        <div class="col-md-8 hide-tablet">
-            <nav class="top-nav">
-                <a href="/" class="top-nav__link">Главная</a>
-                <a href="about.html" class="top-nav__link">О&nbsp;компании</a>
-                <a href="#" class="top-nav__link">Отдых зарубежом</a>
-                <a href="russia-tour.html" class="top-nav__link">Отдых в&nbsp;России</a>
-                <a href="#" class="top-nav__link">Отзывы</a>
-                <a href="#" class="top-nav__link">Акции</a>
-                <a href="#" class="top-nav__link">Контакты</a>
-            </nav>
-        </div>
-    </div>
-</div>
-
+</section>
 <div class="order-block">
-    <div class="container">
+    <div class="container rel-block">
         <div class="row">
             <div class="col-lg-2 col-md-12 col-xs-12">
                 <h2 class="order-block__title">Хочу на отдых:</h2>
@@ -125,9 +132,8 @@
         </div>
         <div class="row">
             <div class="col-md-6 col-xs-12">
-               <img src="img/perm-1.jpg" alt="Пермский край">
+               <img src="img/perm-tour.jpg" alt="Пермский край">
             </div>
-            <div class="col-md-6 col-xs-12"><img src="img/perm-2.jpg" alt="Пермский край"></div>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -2100,7 +2106,7 @@
     <div class="main-footer_wrap">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                     <h5 class="main-footer__title">Наши контакты</h5>
                     <div class="main-footer__item">
                         <div class="main-footer__icon">
@@ -2125,7 +2131,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-5 col-md-offset-1 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                     <div class="main-footer__col">
                         <h5 class="main-footer__title">Режим работы</h5>
                         <div class="main-footer__item">
@@ -2146,6 +2152,11 @@
         </div>
     </div>
 </footer>
+
+<script src="libs/jquery.js"></script>
+<script src="libs/swiper.jquery.min.js"></script>
+<script src="libs/parallax.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
