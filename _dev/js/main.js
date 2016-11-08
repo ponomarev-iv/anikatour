@@ -61,11 +61,26 @@ function SwiperInit() {
             }
         })
     }
+}
 
+function sendForm(){
+    $("#main-form").submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "send.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            alert("Спасибо за обращение в нашу компанию. В ближайшее время мы свяжемся с вами.");
+            $("#main-form").trigger("reset");
+        });
+        return false;
+    });
 }
 
 $(document).ready(function () {
     desctopPageHeader();
     parallaxEffect();
+    sendForm();
     SwiperInit();
 })

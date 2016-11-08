@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="libs/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/all.css" type="text/css">
     <title>Экскурсионные туры по Перми и Пермскому краю</title>
@@ -59,31 +60,31 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-10 col-sm-12 hide-mobile">
+            <div class="col-md-11 col-sm-11 hide-mobile">
                 <nav class="top-nav">
                     <a href="/" class="top-nav__link">Главная</a>
                     <a href="about.html" class="top-nav__link">О&nbsp;компании</a>
-                    <a href="#" class="top-nav__link">Отдых зарубежом</a>
+                    <a href="zagran-tour.html" class="top-nav__link">Отдых зарубежом</a>
                     <a href="russia-tour.html" class="top-nav__link">Отдых в&nbsp;России</a>
-                    <a href="#" class="top-nav__link">Отзывы</a>
-                    <a href="#" class="top-nav__link">Акции</a>
+                    <a href="reviews.html" class="top-nav__link">Отзывы</a>
+                    <a href="stock.html" class="top-nav__link">Акции</a>
                     <a href="contact.html" class="top-nav__link">Контакты</a>
 
                 </nav>
             </div>
-            <div class="col-md-2 col-sm-12 col-xs-12 hide-tablet">
+            <div class="col-md-1 col-sm-1 hide-tablet">
                 <div class="header__social-icon">
-                    <a href="#">
+                    <a href="https://www.instagram.com/anikatour59/">
                         <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
                             <use xlink:href="img/sprite.svg#insta"></use>
                         </svg>
                     </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
-                            <use xlink:href="img/sprite.svg#facebook"></use>
-                        </svg>
-                    </a>
-                    <a href="#">
+                    <!--<a href="#">-->
+                        <!--<svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">-->
+                            <!--<use xlink:href="img/sprite.svg#facebook"></use>-->
+                        <!--</svg>-->
+                    <!--</a>-->
+                    <a href="https://vk.com/anikatour">
                         <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
                             <use xlink:href="img/sprite.svg#vk"></use>
                         </svg>
@@ -100,18 +101,18 @@
                 <h2 class="order-block__title">Хочу на отдых:</h2>
             </div>
             <div class="col-lg-10 col-md-12 col-xs-12">
-                <form action="#!" class="main-order">
+                <form id="main-form" class="main-order">
                     <div class="form-unit form-unit_single-left width-25 reset-mobile">
-                        <input type="text" class="inp-regular" placeholder="Выберите вид отдыха">
+                        <input type="text" name="rest" class="inp-regular" placeholder="Выберите вид отдыха">
                     </div>
                     <div class="form-unit width-15 reset-mobile">
-                        <input type="text" class="inp-regular" placeholder="Ваше имя">
+                        <input type="text" name="fio" class="inp-regular" placeholder="Ваше имя">
                     </div>
                     <div class="form-unit width-20 reset-mobile">
-                        <input type="email" class="inp-regular" placeholder="Ваш e-mail">
+                        <input type="email" name="email" class="inp-regular" placeholder="Ваш e-mail">
                     </div>
                     <div class="form-unit width-20 reset-mobile">
-                        <input type="tel" class="inp-regular" placeholder="Ваш телефон" required>
+                        <input type="tel" name="phone" class="inp-regular" placeholder="Ваш телефон" required>
                     </div>
                     <div class="form-unit width-20 reset-mobile">
                         <button class="btn btn-action btn_w-100" type="submit">Отправить заявку</button>

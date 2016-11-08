@@ -162,3 +162,15 @@ a[href^=tel]{
     text-decoration: none;
   }
 }
+
+.minimal-price{
+  padding: 60px 0;
+}
+
+.sm{
+  font-size: $small-size;
+}
+
+.gap-top{
+  margin-top: 30px !important;
+}

@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     spritesmith  = require('gulp.spritesmith'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('gulp-rimraf'),
+    newer = require('gulp-newer'),
     browserSync = require("browser-sync"),
     $ = {
         gutil: require('gulp-util'),
@@ -146,6 +147,7 @@ gulp.task('style:build', function () {
 
 gulp.task('image:build', function () {
     gulp.src(path.src.img)
+        .pipe(newer(path.build.img))
         .pipe(imagemin())
         .on('error', console.log)
         .pipe(gulp.dest(path.build.img));

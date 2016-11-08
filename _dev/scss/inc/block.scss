@@ -56,4 +56,18 @@
     height: 100%;
     background: $main-bg;
   }
+
+  &_reviews{
+    margin-bottom: 40px;
+
+    &:last-of-type{
+      margin-bottom: 20px;
+    }
+
+    & p{
+      font-style: normal;
+      font-size: $normal-size;
+      margin-bottom: 1rem;
+    }
+  }
 }
