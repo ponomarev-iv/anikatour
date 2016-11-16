@@ -47,7 +47,25 @@
                     </div>
                     <div class="header__item hide-tablet">
                         <div class="header__btn hide-mobile">
-                            <a href="#" class="btn btn-action">Позвонить нам</a>
+                            <a href="#form-popup" class="btn btn-action js-open-popup">Позвонить нам</a>
+                        </div>
+                        <div id="form-popup" class="form-popup mfp-hide">
+                            <h3 class="form-popup__title">Оставьте телефон, и мы перезвоним вам:</h3>
+                            <form id="popup-form" class="popup-form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-unit form-unit_w100">
+                                            <input type="text" name="fio" class="inp-regular" placeholder="Ваше имя" required>
+                                        </div>
+                                        <div class="form-unit form-unit_w100">
+                                            <input type="tel" name="phone" class="inp-regular" placeholder="Ваш телефон" required>
+                                        </div>
+                                        <div class="form-unit form-unit_w100">
+                                            <button class="btn btn-action btn_w-100" type="submit">Перезвонить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -61,15 +79,16 @@
         <div class="row">
 
             <div class="col-md-11 col-sm-11 hide-mobile">
-                <nav class="top-nav">
-                    <a href="/" class="top-nav__link">Главная</a>
-                    <a href="about.html" class="top-nav__link">О&nbsp;компании</a>
-                    <a href="zagran-tour.html" class="top-nav__link">Отдых зарубежом</a>
-                    <a href="russia-tour.html" class="top-nav__link">Отдых в&nbsp;России</a>
-                    <a href="reviews.html" class="top-nav__link">Отзывы</a>
-                    <a href="stock.html" class="top-nav__link">Акции</a>
-                    <a href="contact.html" class="top-nav__link">Контакты</a>
-
+                <nav id="main-nav">
+                    <ul class="top-nav">
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="about.html">О&nbsp;компании</a></li>
+                        <li><a href="zagran-tour.html">Отдых зарубежом</a></li>
+                        <li><a href="russia-tour.html">Отдых в&nbsp;России</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="stock.html">Акции</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
                 </nav>
             </div>
             <div class="col-md-1 col-sm-1 hide-tablet">
@@ -80,9 +99,9 @@
                         </svg>
                     </a>
                     <!--<a href="#">-->
-                        <!--<svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">-->
-                            <!--<use xlink:href="img/sprite.svg#facebook"></use>-->
-                        <!--</svg>-->
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">-->
+                    <!--<use xlink:href="img/sprite.svg#facebook"></use>-->
+                    <!--</svg>-->
                     <!--</a>-->
                     <a href="https://vk.com/anikatour">
                         <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
@@ -134,89 +153,89 @@
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
                <a href="azerbadjan-tour.html" class="card">
-                   <div class="card__header">
-                       <h2>Азербайджан</h2>
-                   </div>
-                   <div class="card__body">
-                       <img src="img/azerbadjan.jpg" alt="Азербайджан">
-                   </div>
+                   <span class="card__header">
+                       <span>Азербайджан</span>
+                   </span>
+                   <span class="card__body">
+                       <img src="/img/azerbadjan.jpg" alt="Азербайджан">
+                   </span>
                </a>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="armenia-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Армения</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/armenia.jpg" alt="Армения">
-                    </div>
+                    <span class="card__header">
+                        <span>Армения</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/armenia.jpg" alt="Армения">
+                    </span>
                 </a>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="belarussia-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Белоруссия</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/belarussia.jpg" alt="Белоруссия">
-                    </div>
+                    <span class="card__header">
+                        <span>Белоруссия</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/belarussia.jpg" alt="Белоруссия">
+                    </span>
                 </a>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="kazahstan-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Казахстан</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/kazahstan.jpg" alt="Казахстан">
-                    </div>
+                    <span class="card__header">
+                        <span>Казахстан</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/kazahstan.jpg" alt="Казахстан">
+                    </span>
                 </a>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="kirgizia-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Киргизия</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/kirgizia.jpg" alt="Киргизия">
-                    </div>
+                    <span class="card__header">
+                        <span>Киргизия</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/kirgizia.jpg" alt="Киргизия">
+                    </span>
                 </a>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="uzbekistan-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Узбекистан</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/uzbekistan.jpg" alt="Узбекистан">
-                    </div>
+                    <span class="card__header">
+                        <span>Узбекистан</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/uzbekistan.jpg" alt="Узбекистан">
+                    </span>
                 </a>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="abhazia-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Абхазия</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/abhazia.jpg" alt="Абхазия">
-                    </div>
+                    <span class="card__header">
+                        <span>Абхазия</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/abhazia.jpg" alt="Абхазия">
+                    </span>
                 </a>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="georgia-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Грузия</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/georgia.jpg" alt="Грузия">
-                    </div>
+                    <span class="card__header">
+                        <span>Грузия</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/georgia.jpg" alt="Грузия">
+                    </span>
                 </a>
             </div>
         </div>
@@ -230,42 +249,42 @@
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="tailand-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Таиланд</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/tailand.jpg" alt="Таиланд">
-                    </div>
+                    <span class="card__header">
+                        <span>Таиланд</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/tailand.jpg" alt="Таиланд">
+                    </span>
                 </a>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="vietnam-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Вьетнам</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/vietnam.jpg" alt="Вьетнам">
-                    </div>
+                    <span class="card__header">
+                        <span>Вьетнам</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/vietnam.jpg" alt="Вьетнам">
+                    </span>
                 </a>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="india-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Индия</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/india.jpg" alt="Индия">
-                    </div>
+                    <span class="card__header">
+                        <span>Индия</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/india.jpg" alt="Индия">
+                    </span>
                 </a>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="indonesia-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Индонезия</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/indonesia.jpg" alt="Индонезия">
-                    </div>
+                    <span class="card__header">
+                        <span>Индонезия</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/indonesia.jpg" alt="Индонезия">
+                    </span>
                 </a>
             </div>
         </div>
@@ -278,55 +297,55 @@
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="srilanka-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Шри-Ланка</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/sri-lanka.jpg" alt="Шри-Ланка">
-                    </div>
+                    <span class="card__header">
+                        <span>Шри-Ланка</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/sri-lanka.jpg" alt="Шри-Ланка">
+                    </span>
                 </a>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="kuba-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Куба</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/kuba.jpg" alt="Куба">
-                    </div>
+                    <span class="card__header">
+                        <span>Куба</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/kuba.jpg" alt="Куба">
+                    </span>
                 </a>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="meksika-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Мексика</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/meksika.jpg" alt="Мексика">
-                    </div>
+                    <span class="card__header">
+                        <span>Мексика</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/meksika.jpg" alt="Мексика">
+                    </span>
                 </a>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="dominikana-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>Доминикана</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/dominikana.jpg" alt="Доминикана">
-                    </div>
+                    <span class="card__header">
+                        <span>Доминикана</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/dominikana.jpg" alt="Доминикана">
+                    </span>
                 </a>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="oae-tour.html" class="card">
-                    <div class="card__header">
-                        <h2>ОАЭ</h2>
-                    </div>
-                    <div class="card__body">
-                        <img src="img/oae.jpg" alt="ОАЭ">
-                    </div>
+                    <span class="card__header">
+                        <span>ОАЭ</span>
+                    </span>
+                    <span class="card__body">
+                        <img src="/img/oae.jpg" alt="ОАЭ">
+                    </span>
                 </a>
             </div>
         </div>
@@ -386,6 +405,7 @@
 
 <script src="libs/jquery.js"></script>
 <script src="libs/swiper.jquery.min.js"></script>
+<script src="libs/magnific.min.js"></script>
 <script src="libs/parallax.min.js"></script>
 <script src="js/main.js"></script>
 

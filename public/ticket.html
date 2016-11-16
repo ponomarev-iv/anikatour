@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/all.css" type="text/css">
+    <title>Билеты</title>
+
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/logo.svg" alt="Аника Тур" width="234" height="66">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12">
+                <div class="header__wrap">
+                    <div class="header__item">
+                        <div class="header__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                                <use xlink:href="img/sprite.svg#icon-location"></use>
+                            </svg>
+                        </div>
+                        <div class="header__txt">
+                            <span>ул.&nbsp;Ленина,&nbsp;10</span><br>
+                            <span>2 этаж, оф. 4</span>
+                        </div>
+                    </div>
+                    <div class="header__item">
+                        <div class="header__icon header__icon_phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                                <use xlink:href="img/sprite.svg#phone"></use>
+                            </svg>
+                        </div>
+                        <div class="header__txt">
+                            <a href="tel:+7(342)2476622">+7(342)&nbsp;247-66-22</a><br>
+                            <a href="tel:2982004">298-20-04</a>
+                        </div>
+                    </div>
+                    <div class="header__item hide-tablet">
+                        <div class="header__btn hide-mobile">
+                            <a href="#form-popup" class="btn btn-action js-open-popup">Позвонить нам</a>
+                        </div>
+                        <div id="form-popup" class="form-popup mfp-hide">
+                            <h3 class="form-popup__title">Оставьте телефон, и мы перезвоним вам:</h3>
+                            <form id="popup-form" class="popup-form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-unit form-unit_w100">
+                                            <input type="text" name="fio" class="inp-regular" placeholder="Ваше имя" required>
+                                        </div>
+                                        <div class="form-unit form-unit_w100">
+                                            <input type="tel" name="phone" class="inp-regular" placeholder="Ваш телефон" required>
+                                        </div>
+                                        <div class="form-unit form-unit_w100">
+                                            <button class="btn btn-action btn_w-100" type="submit">Перезвонить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="header__menu header__menu_fixed">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-11 col-sm-11 hide-mobile">
+                <nav id="main-nav">
+                    <ul class="top-nav">
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="about.html">О&nbsp;компании</a></li>
+                        <li><a href="zagran-tour.html">Отдых зарубежом</a></li>
+                        <li><a href="russia-tour.html">Отдых в&nbsp;России</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="stock.html">Акции</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-1 col-sm-1 hide-tablet">
+                <div class="header__social-icon">
+                    <a href="https://www.instagram.com/anikatour59/">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                            <use xlink:href="img/sprite.svg#insta"></use>
+                        </svg>
+                    </a>
+                    <!--<a href="#">-->
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">-->
+                    <!--<use xlink:href="img/sprite.svg#facebook"></use>-->
+                    <!--</svg>-->
+                    <!--</a>-->
+                    <a href="https://vk.com/anikatour">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="order-block">
+    <div class="container rel-block">
+        <div class="row">
+            <div class="col-lg-2 col-md-12 col-xs-12">
+                <h2 class="order-block__title">Хочу на отдых:</h2>
+            </div>
+            <div class="col-lg-10 col-md-12 col-xs-12">
+                <form id="main-form" class="main-order">
+                    <div class="form-unit form-unit_single-left width-25 reset-mobile">
+                        <input type="text" name="rest" class="inp-regular" placeholder="Выберите вид отдыха">
+                    </div>
+                    <div class="form-unit width-15 reset-mobile">
+                        <input type="text" name="fio" class="inp-regular" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-unit width-20 reset-mobile">
+                        <input type="email" name="email" class="inp-regular" placeholder="Ваш e-mail">
+                    </div>
+                    <div class="form-unit width-20 reset-mobile">
+                        <input type="tel" name="phone" class="inp-regular" placeholder="Ваш телефон" required>
+                    </div>
+                    <div class="form-unit width-20 reset-mobile">
+                        <button class="btn btn-action btn_w-100" type="submit">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="main-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="section-title">Билеты</h1>
+                <hr class="accent-line">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Отправить заявку на бронирования авиа билетов:
+                </p>
+                <form id="ticket-form-avia" class="ticket-form">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-unit form-unit_single-left width-25 reset-mobile">
+                                <input type="text" name="fio" class="inp-regular" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-unit width-25 reset-mobile">
+                                <input type="email" name="email" class="inp-regular" placeholder="Ваш e-mail" required>
+                            </div>
+                            <div class="form-unit width-25 reset-mobile">
+                                <input type="tel" name="phone" class="inp-regular" placeholder="Ваш телефон" required>
+                            </div>
+                            <div class="form-unit width-25 reset-mobile">
+                                <button class="btn btn-action btn_w-100" type="submit">Отправить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="main-footer_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h5 class="main-footer__title">Наши контакты</h5>
+                    <div class="main-footer__item">
+                        <div class="main-footer__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                                <use xlink:href="img/sprite.svg#icon-location"></use>
+                            </svg>
+                        </div>
+                        <p class="main-footer__txt">
+                            Россия, г.&nbsp;Пермь, ул.&nbsp;Ленина&nbsp;10, оф.&nbsp;4<br>
+                            2 этаж, вход с ул. Пермская
+                        </p>
+                    </div>
+                    <div class="main-footer__item">
+                        <div class="main-footer__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                                <use xlink:href="img/sprite.svg#phone"></use>
+                            </svg>
+                        </div>
+                        <p class="main-footer__txt">
+                            +7&nbsp;(342)&nbsp;247&nbsp;66&nbsp;22, 298&nbsp;20&nbsp;04
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="main-footer__col">
+                        <h5 class="main-footer__title">Режим работы</h5>
+                        <div class="main-footer__item">
+                            <div class="main-footer__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
+                                    <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                            </div>
+                            <p class="main-footer__txt">
+                                Будни с 10:00 до 19:00<br>
+                                Суббот с 11:00 до 15:00
+                            </p>
+                        </div>
+                        <h5 class="main-footer__title main-footer__title_pad-l">Воскресенье <span>выходной</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="libs/jquery.js"></script>
+<script src="libs/swiper.jquery.min.js"></script>
+<script src="libs/magnific.min.js"></script>
+<script src="libs/parallax.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

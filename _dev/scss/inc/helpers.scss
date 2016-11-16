@@ -174,3 +174,22 @@ a[href^=tel]{
 .gap-top{
   margin-top: 30px !important;
 }
+
+.form-popup {
+  position: relative;
+  background: $main-bg;
+  padding: 30px;
+  width:auto;
+  max-width: 500px;
+  margin: 20px auto;
+  color: #fff;
+}
+
+.mfp-bg{
+  background: #fff;
+  opacity: .7;
+}
+
+.mfp-close-btn-in .mfp-close {
+  color: #fff !important;
+}

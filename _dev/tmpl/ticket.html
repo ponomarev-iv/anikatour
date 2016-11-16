@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/all.css" type="text/css">
+    <title>Билеты</title>
+
+</head>
+<body>
+
+//= inc/toolbar.html
+//= inc/form-order.html
+
+<section class="main-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="section-title">Билеты</h1>
+                <hr class="accent-line">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Отправить заявку на бронирования авиа билетов:
+                </p>
+                <form id="ticket-form-avia" class="ticket-form">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-unit form-unit_single-left width-25 reset-mobile">
+                                <input type="text" name="fio" class="inp-regular" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-unit width-25 reset-mobile">
+                                <input type="email" name="email" class="inp-regular" placeholder="Ваш e-mail" required>
+                            </div>
+                            <div class="form-unit width-25 reset-mobile">
+                                <input type="tel" name="phone" class="inp-regular" placeholder="Ваш телефон" required>
+                            </div>
+                            <div class="form-unit width-25 reset-mobile">
+                                <button class="btn btn-action btn_w-100" type="submit">Отправить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+//= inc/footer.html
+
+</body>
+</html>

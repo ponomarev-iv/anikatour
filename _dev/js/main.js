@@ -63,6 +63,13 @@ function SwiperInit() {
     }
 }
 
+function popupMagnific(){
+    $('.js-open-popup').magnificPopup({
+        type:'inline',
+        midClick: true
+    });
+}
+
 function sendForm(){
     $("#main-form").submit(function () {
         $.ajax({
@@ -76,10 +83,51 @@ function sendForm(){
         });
         return false;
     });
+
+    $("#ticket-form-avia").submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "send-ticket-avia.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            alert("Спасибо за обращение в нашу компанию. В ближайшее время мы свяжемся с вами.");
+            $("#ticket-form-avia").trigger("reset");
+        });
+        return false;
+    });
+
+    $("#ticket-form-jd").submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "send-ticket-jd.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            alert("Спасибо за обращение в нашу компанию. В ближайшее время мы свяжемся с вами.");
+            $("#ticket-form-jd").trigger("reset");
+        });
+        return false;
+    });
+
+    $("#popup-form").submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "send-phone.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            alert("Спасибо за обращение в нашу компанию. В ближайшее время мы свяжемся с вами.");
+            $("#popup-form").trigger("reset");
+            $.magnificPopup.close();
+        });
+        return false;
+    });
 }
 
 $(document).ready(function () {
     desctopPageHeader();
+    popupMagnific();
     parallaxEffect();
     sendForm();
     SwiperInit();

@@ -47,7 +47,25 @@
                     </div>
                     <div class="header__item hide-tablet">
                         <div class="header__btn hide-mobile">
-                            <a href="#" class="btn btn-action">Позвонить нам</a>
+                            <a href="#form-popup" class="btn btn-action js-open-popup">Позвонить нам</a>
+                        </div>
+                        <div id="form-popup" class="form-popup mfp-hide">
+                            <h3 class="form-popup__title">Оставьте телефон, и мы перезвоним вам:</h3>
+                            <form id="popup-form" class="popup-form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-unit form-unit_w100">
+                                            <input type="text" name="fio" class="inp-regular" placeholder="Ваше имя" required>
+                                        </div>
+                                        <div class="form-unit form-unit_w100">
+                                            <input type="tel" name="phone" class="inp-regular" placeholder="Ваш телефон" required>
+                                        </div>
+                                        <div class="form-unit form-unit_w100">
+                                            <button class="btn btn-action btn_w-100" type="submit">Перезвонить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -61,15 +79,16 @@
         <div class="row">
 
             <div class="col-md-11 col-sm-11 hide-mobile">
-                <nav class="top-nav">
-                    <a href="/" class="top-nav__link">Главная</a>
-                    <a href="about.html" class="top-nav__link">О&nbsp;компании</a>
-                    <a href="zagran-tour.html" class="top-nav__link">Отдых зарубежом</a>
-                    <a href="russia-tour.html" class="top-nav__link">Отдых в&nbsp;России</a>
-                    <a href="reviews.html" class="top-nav__link">Отзывы</a>
-                    <a href="stock.html" class="top-nav__link">Акции</a>
-                    <a href="contact.html" class="top-nav__link">Контакты</a>
-
+                <nav id="main-nav">
+                    <ul class="top-nav">
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="about.html">О&nbsp;компании</a></li>
+                        <li><a href="zagran-tour.html">Отдых зарубежом</a></li>
+                        <li><a href="russia-tour.html">Отдых в&nbsp;России</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="stock.html">Акции</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
                 </nav>
             </div>
             <div class="col-md-1 col-sm-1 hide-tablet">
@@ -80,9 +99,9 @@
                         </svg>
                     </a>
                     <!--<a href="#">-->
-                        <!--<svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">-->
-                            <!--<use xlink:href="img/sprite.svg#facebook"></use>-->
-                        <!--</svg>-->
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">-->
+                    <!--<use xlink:href="img/sprite.svg#facebook"></use>-->
+                    <!--</svg>-->
                     <!--</a>-->
                     <a href="https://vk.com/anikatour">
                         <svg xmlns="http://www.w3.org/2000/svg" class="ico-ui">
@@ -141,13 +160,13 @@
         </div>
         <div class="row">
             <div class="col-md-4 col-xs-12">
-                <img src="img/cruises-1.jpg" alt="Круизы из Перми 2017">
+                <img src="/img/cruises-1.jpg" alt="Круизы из Перми 2017">
             </div>
             <div class="col-md-4 col-xs-12">
-                <img src="img/cruises-2.jpg" alt="Круизы из Перми 2017">
+                <img src="/img/cruises-2.jpg" alt="Круизы из Перми 2017">
             </div>
             <div class="col-md-4 col-xs-12">
-                <img src="img/cruises-3.jpg" alt="Круизы из Перми 2017">
+                <img src="/img/cruises-3.jpg" alt="Круизы из Перми 2017">
             </div>
         </div>
 
@@ -161,7 +180,7 @@
                 </p>
                 <p class="accent">СХЕМА ТЕПЛОХОДА «МИХАИЛ КУТУЗОВ»</p>
                 <p>
-                    <img src="img/shema-kutuzov.jpg" alt="СХЕМА ТЕПЛОХОДА «МИХАИЛ КУТУЗОВ»">
+                    <img src="/img/shema-kutuzov.jpg" alt="СХЕМА ТЕПЛОХОДА «МИХАИЛ КУТУЗОВ»">
                 </p>
                 <hr>
                 <h2 class="section-title">Теплоход «Владимир Маяковский»</h2>
@@ -171,7 +190,7 @@
                 </p>
                 <p class="accent">СХЕМА ТЕПЛОХОДА «ВЛАДИМИР МАЯКОВСКИЙ»</p>
                 <p>
-                    <img src="img/shema-mayak.jpg" alt="СХЕМА ТЕПЛОХОДА «ВЛАДИМИР МАЯКОВСКИЙ»">
+                    <img src="/img/shema-mayak.jpg" alt="СХЕМА ТЕПЛОХОДА «ВЛАДИМИР МАЯКОВСКИЙ»">
                 </p>
 
                 <hr>
@@ -182,7 +201,7 @@
                 </p>
                 <p class="accent">СХЕМА ТЕПЛОХОДА «ПАВЕЛ БАЖОВ»</p>
                 <p>
-                    <img src="img/shema-bajov.jpg" alt="СХЕМА ТЕПЛОХОДА «ПАВЕЛ БАЖОВ»">
+                    <img src="/img/shema-bajov.jpg" alt="СХЕМА ТЕПЛОХОДА «ПАВЕЛ БАЖОВ»">
                 </p>
 
                 <hr>
@@ -193,7 +212,7 @@
                 </p>
                 <p class="accent">СХЕМА ТЕПЛОХОДА «КАПИТАН ПУШКАРЁВ»</p>
                 <p>
-                    <img src="img/shema-pushkarev.jpg" alt="СХЕМА ТЕПЛОХОДА «ПАВЕЛ БАЖОВ»">
+                    <img src="/img/shema-pushkarev.jpg" alt="СХЕМА ТЕПЛОХОДА «ПАВЕЛ БАЖОВ»">
                 </p>
             </div>
         </div>
@@ -254,6 +273,7 @@
 
 <script src="libs/jquery.js"></script>
 <script src="libs/swiper.jquery.min.js"></script>
+<script src="libs/magnific.min.js"></script>
 <script src="libs/parallax.min.js"></script>
 <script src="js/main.js"></script>
 

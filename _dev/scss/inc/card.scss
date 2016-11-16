@@ -28,8 +28,9 @@
     color: #fff;
     padding: 15px 20px;
     overflow: hidden;
+    display: block;
 
-    & h2{
+    & span{
       font-family: $Roboto;
       font-size: $big-size;
       white-space: nowrap;
@@ -43,6 +44,7 @@
   }
 
   &__body{
+    display: block;
 
     & img{
       max-width: 100%;

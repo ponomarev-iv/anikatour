@@ -8,35 +8,65 @@
   height: 55px;
   margin: 0;
   padding: 0;
+  width: 100%;
 
-  &__link{
-    font-family: $Roboto;
-    color: #fff;
-    font-size: $normal-size;
-    padding:  0 1.2em;
+  & li{
     text-align: center;
     display: table-cell;
     vertical-align: middle;
     border-left: 1px solid #405a6c;
 
-    @extend %transition;
-
-    @include respondTo(desktop){
-      font-size: $xs-size;
-    }
-
-    @include respondTo(tablet){
-      padding:  0 1.6em;
-    }
-
-    &:hover{
-      color: $white;
-      background: $accent;
-      text-decoration: none;
-    }
-
     &:last-child{
       border-right: 1px solid #405a6c;
     }
+
+
+    & a{
+      font-family: $Roboto;
+      color: #fff;
+      font-size: $normal-size;
+      display: block;
+      padding:  0 1.2em;
+      line-height: 55px;
+      white-space: nowrap;
+
+      @extend %transition;
+
+      &:hover{
+        color: $white;
+        background: $accent;
+        text-decoration: none;
+      }
+
+      @include respondTo(desktop){
+        font-size: $xs-size;
+      }
+
+      @include respondTo(tablet){
+        padding:  0 1.6em;
+      }
+
+    }
+  }
+}
+
+.akcii{
+  animation: sale-link 1400ms ease infinite;
+
+  &:hover{
+    animation: none;
+  }
+}
+
+.novogodnie-i-rozdestvenskie-tury{
+  background: url('../img/snowflake.png') repeat 50% 50% / cover;
+}
+
+@keyframes sale-link {
+  from{
+    background: transparent;
+  }
+  to{
+    background: $action;
   }
 }
