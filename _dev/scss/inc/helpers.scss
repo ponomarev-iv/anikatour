@@ -193,3 +193,41 @@ a[href^=tel]{
 .mfp-close-btn-in .mfp-close {
   color: #fff !important;
 }
+
+//переопределяю стрелки
+#swiper-partner{
+
+  & .swiper-button-prev,
+  & .swiper-button-next{
+    border-radius: 50%;
+    background: $main-bg;
+    width: 55px;
+    height: 55px;
+    left: 0;
+
+    &:before{
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: calc(50% - 10px);
+      left: calc(50% - 8px);
+      box-sizing: border-box;
+    }
+  }
+
+  & .swiper-button-next{
+      left: auto;
+      right: 0;
+
+    &:before{
+      transform: rotate(135deg);
+      right: calc(50% - 8px);
+      left: auto;
+    }
+  }
+}

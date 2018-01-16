@@ -8,7 +8,7 @@
   color: $white;
   padding: .7em 0;
   box-sizing: border-box;
-  animation: slide-top .45s linear 1;
+  //animation: slide-top .45s ease-out 1;
 
   &__wrap{
     display: flex;
@@ -129,25 +129,25 @@
     background: #486579;
     color:#fff;
 
-    &_fixed{
-      position: fixed;
-      width: 100%;
-      opacity: .9;
-      border-bottom: 1px solid #405a6c;
-      top:0;
-      z-index: 100;
-    }
+    //&_fixed{
+    //  position: fixed;
+    //  width: 100%;
+    //  opacity: .9;
+    //  border-bottom: 1px solid #405a6c;
+    //  top:0;
+    //  z-index: 100;
+    //}
   }
 }
 
-@keyframes slide-top {
-  from{
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-  to{
-    opacity: 1;
-    transform: none
-  }
-}
+//@keyframes slide-top {
+//  from{
+//    opacity: 0;
+//    transform: translate3d(0, -100%, 0);
+//  }
+//  to{
+//    opacity: 1;
+//    transform: none
+//  }
+//}
 

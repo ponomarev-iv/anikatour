@@ -47,15 +47,15 @@ function SwiperInit() {
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             loop: true,
-            slidesPerView: 3,
-            autoplay: 3000,
+            slidesPerView: 5,
+            autoplay: 2000,
             breakpoints: {
                 640: {
-                    slidesPerView: 1,
+                    slidesPerView: 3,
                     spaceBetween: 0
                 },
                 991: {
-                    slidesPerView: 2,
+                    slidesPerView: 4,
                     spaceBetween: 30
                 }
             }
@@ -126,7 +126,7 @@ function sendForm(){
 }
 
 $(document).ready(function () {
-    desctopPageHeader();
+    // desctopPageHeader();
     popupMagnific();
     parallaxEffect();
     sendForm();
